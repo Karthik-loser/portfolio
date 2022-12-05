@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Elements class with inheritance and contracts</title>
+    <style>
+        li{
+            display: inline;
+        }
+        li::after {
+            content: "=>";
+        }
+        li:last-child::after {
+            content: "";
+        }
+        li:last-child {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <ol>
+        <li>Home</li>
+        <li>Electronics</li>
+        <li>Mobiles</li>
+        <li>Samsung</li>
+    </ol>
+</body>
+</html>

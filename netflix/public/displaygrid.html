@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Display Grid</title>
+    <style>
+        header,section,nav,aside,main,footer {
+            border: 2px solid black;
+            padding: 5px;
+            margin: 5px;
+        }
+        section {
+            height: 400px;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 3fr 6fr 3fr;
+            grid-gap: 10px;
+        }
+        header {
+            grid-row: 1;
+            grid-column: 1/4;
+        }
+        section {
+            grid-row: 3;
+            grid-column: 1/4;
+        }
+        nav {
+            grid-row: 3;
+            grid-column: 1;
+            background-color: yellow;
+            visibility: visible;
+        }
+        aside {
+            grid-row: 2;
+            grid-column: 1/4;
+        }
+        main{
+            grid-row: 3;
+            grid-column: 2/4;
+        }
+        footer {
+            grid-row: 4;
+            grid-column: 1/4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Amazon Shopping</h1>
+        </header>
+        <section>
+            Section
+        </section>
+        <nav>
+            navigation
+        </nav>
+        <aside>
+            Ads
+        </aside>
+        <main>
+            Main Content
+        </main>
+        <footer>
+            &copy; copyright 2022
+        </footer>
+    </div>
+</body>
+</html>

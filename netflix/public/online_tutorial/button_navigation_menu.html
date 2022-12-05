@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Navigation Menu</title>
+    <link rel="stylesheet" type="text/css" href="navigationstyle.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body class="container-fluid">
+    <div class="navigation">
+        <div class="menuToggle"><i></i></div>
+        <div class="menu">
+            <ul>
+                <li style="--i:0.1s;"><span class="bi bi-house-door" ></span></li>
+                <li style="--i:0.2s;"><span class="bi bi-person"></span></li>
+                <li></li>
+                <li style="--i:0.2s;"><span class="bi bi-heart"></span></li>
+                <li style="--i:0.1s;"><span class="bi bi-bell"></span></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        let menuToggle=document.querySelector('.menuToggle');
+        menuToggle.onclick =function(){
+            menuToggle.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Inline and Block</title>
+    <style>
+        li{
+            display: inline;
+            margin-right: 100px;
+        }
+        #UserName:invalid+span{
+            display: block;
+        }
+        #UserName:valid+span{
+            display: none;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li>home</li>
+        <li>about</li>
+        <li>contact</li>
+    </ul>
+
+    <dl>
+        <dt>User Name</dt>
+        <dd>
+            <input type="text" id="UserName" required>
+            <span style="color: red;">User Name Required</span>
+        </dd>
+    </dl>
+</body>
+</html>

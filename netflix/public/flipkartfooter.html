@@ -1,0 +1,283 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart</title>
+    <link rel="shortcut icon" href="./Images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        .main{
+            background-color: rgba(4, 22, 41, 0.88);
+            color: white;
+            height: 300px;
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+            font-size: 13px;
+            padding: 30px;    
+            font-family: Arial;       
+        }
+        .foot-icons span span{
+            color: gold;
+        }
+        .foot-icons span{
+            padding-left: 20px;
+            font-weight: bold;
+            font-family: Arial;
+        }
+        .foot-ricons span{
+            padding-left: 20px;
+            font-weight: bold;
+            font-family: Arial;
+        }
+
+        .left-column{
+            display: grid;
+            grid-template-columns: 1.5fr 1.5fr 1.5fr 1.5fr;
+        }
+        .left-column div{
+            line-height: 25px;            
+        }
+
+
+        .title{
+            color: rgb(160, 160, 160);
+            margin-bottom: 9px;
+        }
+
+
+        .right-column{
+            display: grid;
+            grid-template-columns: 3fr 3fr;
+            border-left: 2px solid rgb(80, 80, 80);
+            padding-left: 20px; 
+        }
+        .right-column div{
+            line-height: 20px;
+        }
+
+
+
+        header{
+            background-color:#2874f0;
+            height: fit-content;
+            position:fixed;
+            width: 99%;
+            font-family: Arial;
+        }
+        .nav-brand-search{
+            display: grid;
+            grid-template-columns: 2.4fr 3.6fr 1.5fr 4.5fr;
+            color: white;
+            font-style: italic;
+            font-family: Arial;
+            font-weight: bold;
+        }
+        .nav-brand{
+            font-size: 20px;
+            padding-left: 150px;
+            padding-top: 13px;
+            padding-bottom: 8px;
+            line-height: 15px;
+        }
+        .nav-brand div{
+            letter-spacing: 1.2px;
+        }
+        .nav-brand span{
+            font-size: 12px;
+        }
+        .nav-search{
+            padding-top: 8px;
+            padding-left: 20px;
+            padding-bottom: 10px;
+            font-size: 25px;
+            height: 30px;
+        }
+        .nav-search input{
+            height: 40px;
+            width: 300px;
+            padding-left: 20px;
+        }
+        .nav-btn{
+            padding-top: 14px;
+            padding-left: 20px;
+        }
+        .nav-btn input{
+            padding-top: 8px;
+            padding-left: 15px;
+            padding-bottom: 8px;
+            height: 33px;
+            width: 120px;
+            font-weight: bold;
+            color: #2874f0;
+        }
+        .nav-icon{
+            padding-top: 20px;
+        }
+        .nav-icon span{
+            padding-left: 20px;
+        }
+        pre{
+            padding-top: 60px;
+        }
+        .main-head{
+            background-color: white;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            font-family: Arial;
+            font-size: 15px;
+            padding-top: 60px;
+            text-align: center;
+            padding-left: 100px;
+            padding-right: 100px;
+            width: max-content;
+            height: min-content;
+            display: flex;
+            border-radius: 2px;
+        }
+        .main-head span{
+            text-align: center;
+            word-spacing: normal;
+            padding-left: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-brand-search">
+            <div class="nav-brand">
+                <div>Flipkart</div>
+                <span>Explore</span>
+                <span style="color: goldenrod;">Plus<span class="bi bi-plus"></span></span>
+            </div>
+            <span class="nav-search">
+                <input type="text" placeholder="Search for products, brands and more"><span class="bi bi-search"></span></span>
+            <div class="nav-btn">
+                <input type="button" value="Login">
+            </div>
+
+            <span class="nav-icon">
+                <span>Become a Seller</span>
+                <span>More<span class="bi bi-arrow-down"></span></span>
+                <span><span class="bi bi-cart"></span>Cart</span>
+            </span>
+        </div>
+    </header>
+    <nav class="main-head">
+        <span><div><img src="./Images/Top Offer.jpg" alt="top-offer" width="85px" height="75px"></div><div style="text-align: center;">Top offers</div></span>
+        <span><div><img src="./Images/Grocery.jpg" alt="grocery" width="85px" height="75px"></div><div style="text-align: center;">Grocery</div></span>
+        <span><div><img src="./Images/Mobile.jpg" alt="mobiles" width="85px" height="75px"></div><div style="text-align: center;">Mobiles</div></span>
+        <span><div><img src="./Images/fashion.jpg" alt="fashion" width="85px" height="75px"></div><div style="text-align: center;">Fashion</div></span>
+        <span><div><img src="./Images/Electronics.jpg" alt="electronics" width="85px" height="75px"></div><div style="text-align: center;">Electronics</div></span>
+        <span><div><img src="./Images/Home.jpg" alt="Home" width="85px" height="75px"></div><div style="text-align: center;">Home</div></span>
+        <span><div><img src="./Images/Appliances.jpg" alt="Appliances" width="85px" height="75px"></div><div style="text-align: center; ">Appliances</div></span>
+        <span><div><img src="./Images/Travels.jpg" alt="Travel" width="85px" height="75px"></div><div style="text-align: center;">Travel</div></span>
+        <span><div><img src="./Images/Beauty.jpg" alt="Beauty" width="85px" height="75px"></div><div style="text-align: center;">Beauty, Toys & More</div></span>
+    </nav>
+    <footer>
+        <div class="main">
+            <div class="left-column">
+                <div>
+                    <div class="title">ABOUT</div>
+                    <div>
+                        Contact Us <br>
+                        About Us <br>
+                        Careers<br>
+                        Flipkart Stories<br>
+                        Press<br>
+                        Flipkart Wholesale<br>
+                        Corporate Information<br>
+                    </div>
+                </div>
+
+
+                <div>
+                    <div class="title">HELP</div>
+                    <div>
+                        Payments<br>
+                        Shipping<br>
+                        Cancellation & Returns<br>
+                        FAQ<br>
+                        Report Infringement<br>
+                    </div>
+                </div>
+
+
+                <div>
+                    <div class="title">POLICY</div>
+                    <div>
+                        Return Policy<br>
+                        Terms Of Use<br>
+                        Security<br>
+                        Privacy<br>
+                        Sitemap<br>
+                        EPR Compliance<br>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="title">SOCIAL</div>
+                    <div>                        
+                        Facebook<br>    
+                        Twitter<br>
+                        YouTube<br>
+                    </div>
+                </div>
+            </div>
+             
+            
+
+
+            <div class="right-column">
+                <div>
+                    <div class="title">Mail Us:</div>
+                    <div>
+                        Flipkart Internet Private Limited,<br>
+                        Buildings Alyssa, Begonia &<br>                   
+                        Clove Embassy Tech Village,<br>                       
+                        Outer Ring Road, Devarabeesanahalli Village,<br>                   
+                        Bengaluru, 560103,<br>     
+                        Karnataka, India<br>
+                    </div>
+                </div>
+
+
+                <div>
+                    <div class="title">Registered Office Address:</div>
+                    <div>
+                        Flipkart Internet Private Limited,<br>
+                        Buildings Alyssa, Begonia &<br>
+                        Clove Embassy Tech Village,<br>
+                        Outer Ring Road, Devarabeesanahalli Village,<br>
+                        Bengaluru, 560103,<br>
+                        Karnataka, India<br>
+                        CIN : U51109KA2012PTC066107<br>
+                        Telephone: 1800 202 9898<br>
+                    </div>
+                </div>
+
+
+                
+            </div>
+            <div><hr></div>
+            <div><hr></div>
+            <div class="foot-icons">
+                <span><span class="bi bi-bag-fill"></span> &nbsp;&nbsp;Become a Seller</span>
+                <span><span class="bi bi-bag-fill"></span> &nbsp;&nbsp;Advertise</span>
+                <span><span class="bi bi-gift-fill"></span> &nbsp;&nbsp;Gift Cards</span>
+                <span><span class="bi bi-question-circle-fill"></span> &nbsp;&nbsp;Help Center</span>
+            </div>
+            <div class="foot-ricons">
+                <span>© 2007-2022 Flipkart.com</span>
+                <span class=""></span>
+            </div>
+            
+        
+            
+            
+        </div>
+    </footer>
+    
+</body>
+</html>

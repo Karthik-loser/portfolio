@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>validation Selector</title>
+    <style>
+        input:required {
+            border: 1px solid red;
+            box-shadow: 2px 2px 2px red;
+        }
+        input:optional {
+            border: 1px solid gold;
+            box-shadow: 2px 2px 2px gold;
+        }
+    </style>
+</head>
+<body>
+    <dl>
+        <dt>User Name</dt>
+        <dd>
+            <input type="text" required style="margin-bottom: 20px;"> <br>
+            <input type="text">
+        </dd>
+    </dl>
+</body>
+</html>

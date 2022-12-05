@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap collapse</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body class="contianer-fluid mt-2 bg-dark text-white">
+    <h1 class="text-center">Frequently Asked Questions</h1>
+    <div class="accordion" id="faqs" style="width: 400px;">
+        <!--item1-->
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <button data-bs-target="#q1" data-bs-toggle="collapse" class="btn btn-dark w-100 mb-2 ">
+                    What is Netflix? <span class="bi bi-x-lg"></span>
+                </button>
+            </div>
+            <div class="accordion-collapse collapse show" id="q1" data-bs-parent="#faqs">
+                <div class="accordion-body bg-dark">
+                    <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows,movies ,anime , documentaries and more - on thousands of internet-connected devices.</p>
+                    <p>You can watch as much as you want, whenever you want , without a single ad -a all for one low monthly price. there's always something new to discover, and new TV shows and movies are added every week! </p>
+                </div>
+            </div>
+
+            <!--item2-->
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button data-bs-target="#q2" data-bs-toggle="collapse" class="btn btn-dark w-100 mb-2 ">
+                        How much does Netflix cost? <span class="bi bi-x-lg"></span>
+                    </button>
+                </div>
+                <div class="accordion-collapse collapse show" id="q1" data-bs-parent="#faqs">
+                    <div class="accordion-body bg-dark">
+                        <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows,movies ,anime , documentaries and more - on thousands of internet-connected devices.</p>
+                        <p>You can watch as much as you want, whenever you want , without a single ad -a all for one low monthly price. there's always something new to discover, and new TV shows and movies are added every week! </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+</body>
+</html>

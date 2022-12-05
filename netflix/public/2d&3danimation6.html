@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>3D Animations</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+        }
+        img {
+            transform: scale3d(1,1,1);
+            transition-duration: 3s;
+            margin-right: 100px;
+        }
+        img:hover {
+            transform: scale3d(2,2,3);
+            box-shadow: 5px 5px 3px black;
+            transition-duration: 3s;
+        }
+        marquee {
+            padding: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <marquee scrollamount="10" onmouseover="this.stop()" onmouseout="this.start()">
+            <img src="../public/Images/bags & luggage.jpg" alt="clothing" width="100" height="100">
+            <img src="../public/Images/clothing.jpg" alt="clothing" width="100" height="100">
+            <img src="../public/Images/watches.jpg" alt="clothing" width="100" height="100">
+        </marquee>
+    </div>
+</body>
+</html>

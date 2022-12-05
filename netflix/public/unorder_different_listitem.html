@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Different List Items for Unorderlist</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        ul{
+            list-style: none;
+        }
+        li{
+            background-color: red;
+            color: white;
+            padding: 5px;
+            width: 200px;
+            border: 1px solid black;
+            margin-bottom: 20px;
+            border-radius: 20px;
+            font-size: 15px;
+            transition: 1s;
+        }
+        li:hover{
+            background-color: black;
+            color: white;
+            cursor: grab;
+            font-size: 20px;
+            transition: 1s;
+        }
+    </style>
+</head>
+<body>
+    <h2>Navigation Bar</h2>
+    <nav>
+        <ul>
+            <li><span class="bi bi-house-fill"></span> <span>Home</span></li>
+            <li><span class="bi bi-person"></span> <span>Login</span></li>
+            <li><span class="bi bi-bell"></span> <span>Notification</span></li>
+            <li><span class="bi bi-globe"></span> <span>Network</span></li>
+        </ul>
+    </nav>
+</body>
+</html>

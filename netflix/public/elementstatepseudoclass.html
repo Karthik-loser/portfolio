@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Element State Pseudo class</title>
+    <style>
+        input+div {
+            display: none;
+        }
+        input:focus+div {
+            display: block;
+        }
+        input:read-only {
+            background-color: lightgrey;
+        }
+        input:read-only+div {
+            display: block;
+        }
+        button:disabled {
+            border: none;
+            background-color: lightgrey;
+            cursor: not-allowed;
+        }
+        .terms+span {
+            color: red;
+        }
+        .terms:checked+span {
+            color: green;
+        }
+        #pan+div {
+            display: none;
+        }
+        #pan:focus+div {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <dl>
+        <dt>PAN Number</dt>
+        <dd>
+            <input type="text" id="pan">
+            <div>PAN In Block Letters Only</div>
+        </dd>
+        <dt>Usrer Name</dt>
+        <dd>
+            <input type="text" readonly value="john">
+            <div>Name is Readonly</div>
+        </dd>
+        <dt>Terms of Service</dt>
+        <dd>
+            <input type="checkbox" class="terms">
+            <span>I Accept</span>
+        </dd>
+    </dl>
+    <button disabled>Submit</button>
+</body>
+</html>

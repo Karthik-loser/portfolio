@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Keyframes & Animation</title>
+    <style>
+        body{
+            overflow: hidden;
+        }
+        @keyframes SlideIN {
+            from {
+                margin-left: 120%;
+                margin-top: 400px;
+                width: 400px;
+                height: 400px;
+            }
+            50% {
+                transform: rotate(360deg);
+                width: 600px;
+                height: 600px;
+            }
+            to {
+                margin-left: 0%;
+                margin-top: 0px;
+                width: 100px;
+                height: 100px;
+            }
+        }
+        img {
+            animation-name: SlideIn;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        @keyframes TextEffects {
+            from {
+                font-size: 150px;
+            }
+            to {
+                font-size: 20px;
+            }
+        }
+        .title1 {
+            animation-name: TextEffects;
+            animation-duration: 5s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+        .title2 {
+            animation-name: TextEffects;
+            animation-duration: 4s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+        .title3 {
+            animation-name: TextEffects;
+            animation-duration: 3s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+        .title4 {
+            animation-name: TextEffects;
+            animation-duration: 2s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+        .title5 {
+            animation-name: TextEffects;
+            animation-duration: 1s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+        .title6 {
+            animation-name: TextEffects;
+            animation-duration: 6s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+        .title7 {
+            animation-name: TextEffects;
+            animation-duration: 7s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+    </style>
+</head>
+<body>
+    <img src="../public/Images/bags & luggage.jpg" alt="bags & luggage" width="100" height="100">
+    <span class="title1">L</span>
+    <span class="title2">u</span>
+    <span class="title3">g</span>
+    <span class="title4">g</span>
+    <span class="title5">a</span>
+    <span class="title6">g</span>
+    <span class="title7">e</span>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Background Media orientation</title>
+    <style>
+        body{
+            height: 600px;
+        }
+        @media screen and (orientation:landscape) {
+            body {
+                background-image: url("./Images/sliding1.jpg");
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+        }
+        @media screen and (orientation:portrait) {
+            body {
+                background-image: url("./Images/sliding2.jpg");
+                height: 768px;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+</body>
+</html>

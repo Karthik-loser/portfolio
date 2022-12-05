@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>2D and 3D Animations (scale)</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+            border: 2px solid red;
+        }
+        img{
+            transform: scale(1,1);
+            transition-duration: 3s;
+        }
+        img:hover{
+            transform: scale(2,2);
+            transition-duration: 3s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="../public/Images/footwear.jpg" alt="shoes" width="100" height="100">
+    </div>
+</body>
+</html>
